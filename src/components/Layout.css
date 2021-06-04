@@ -1,0 +1,17 @@
+
+.card {
+    display:flex;
+    flex-direction:column;
+    background-color:lightgray;
+    height:500px;
+    margin:auto;
+    width:40%;
+    align-items:center;
+    justify-content:space-around;
+    
+  }
+  .sleeve {
+      align-items:center;
+      justify-items:center;
+  }
+  
