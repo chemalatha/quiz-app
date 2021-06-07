@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { addQuestion } from '../redux';
+import './Question.css';
 
 export function Question({question,setQIndex}) {
     const dispatch = useDispatch();
@@ -9,7 +10,7 @@ export function Question({question,setQIndex}) {
         setQIndex(prev=>prev+1);
     }
     return (
-      <div>
+      <div className="question">
         <div dangerouslySetInnerHTML={{__html: question.question}} />
         <button onClick={()=>onSubmit(true)}>true</button>
         <button onClick={()=>onSubmit(false)}>false</button>
