@@ -9,8 +9,8 @@ export function Question({question,setQIndex}) {
         setQIndex(prev=>prev+1);
     }
     return (
-      <div >
-        {question.question}
+      <div>
+        <div dangerouslySetInnerHTML={{__html: question.question}} />
         <button onClick={()=>onSubmit(true)}>true</button>
         <button onClick={()=>onSubmit(false)}>false</button>
       </div>
